@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement in Java Script</title>
+</head>
+<body>
+    <script>
+        //Conditional statement
+        let age=23;
+        // if(age>=18){
+        //     console.log("Valid age for vote casting!");
+        // }
+        if(age>=18){
+            console.log("Valid age for vote casting!");
+        }
+        else{
+            console.log("Not valid age for vote");
+        }
+        let grade='A';
+        switch(grade){
+            case 'A':result=("First Division");
+            break;
+            case "B":result="Second Division";
+            break;
+            case 'C':result="Third Division";
+            break;
+            default:result="Fail";
+        }
+        console.log(result);
+        let marks=55;
+        if(marks>=60){
+            console.log("First Divisoin Marks");
+        }
+        else if(marks<60 && marks>40){
+        console.log("Second Divisoin Marks");
+        }
+        else if(marks<40 && marks>33){
+            console.log("Third Division Marks");
+        }
+        else{
+            console.log("Fail");
+        }
+    </script>
+</body>
+</html>

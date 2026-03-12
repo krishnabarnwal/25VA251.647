@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Average & Grade</title>
+</head>
+
+<body>
+
+<script>
+
+let arr = [50,60,30,53,65,34,79,90,99];
+let sum = 0;
+
+for(let i = 0; i < arr.length; i++){
+    sum = sum + arr[i];
+}
+
+let avg = sum / arr.length;
+
+console.log("Average =", avg);
+
+if(avg >= 90){
+    console.log("Grade A");
+}
+else if(avg >= 70){
+    console.log("Grade B");
+}
+else if(avg >= 50){
+    console.log("Grade C");
+}
+else if(avg >= 33){
+    console.log("Grade D");
+}
+else{
+    console.log("Fail");
+}
+
+</script>
+
+</body>
+</html>
