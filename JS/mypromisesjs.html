@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //         let myPromises=new Promise (function (resolve,reject){
+
+        //             let age = 25;
+        //             if (age>=18){
+        //                 resolve("valid age")}
+        //             else{
+        //                 reject("wait for next year");
+
+        // }       
+        //      });
+
+        // myPromises
+        // .then(result=>console.log(result))
+        // .catch(error=>console.log(error))
+        // .finally(console.log("Done"));
+
+
+        //async wait in js
+
+        async function userData() {
+            try {
+                let response = await fetch('https://dummyjson.com/ip')
+                let responseData = await response.json();
+                console.log(responseData)
+            }
+            catch (error) {
+                console.log(error);
+            }
+        }
+        userData();
+
+         let num = [1, 2, 3, 4, 5, 6, 7];
+        let square = num.map(n => n * 2);
+        console.log(square);
+
+        //reduce
+
+        let sum = num.reduce((total, n) => total + n);
+        console.log(sum);
+
+        // The for Each fun Executes a provided function once for each array element 
+
+        num.forEach((n) => console.log(n * 2));
+
+        //shorting
+
+        let numbers = [10, 5, 2, 25];
+        numbers.sort((a, b) => a - b);
+
+        console.log(numbers);
+
+        //IIFE:- It IS a java script function that runes as soon 
+
+        (function () {
+            console.log("Mordern js");
+
+        }
+        )();
+
+        // storage 
+        //local storage
+
+        let userInfo = {
+            name: "json",
+            age: 18,
+            email: "gorakhsharma362@gmail.com"
+        };
+
+
+        localStorage.selection('userinfo',JSON.stringify('userInfo'));
+        
+
+        //retrive the string and parse back into an object
+        const saveruser= JSON.parse(localStorage.getItem('userInfo'))
+        console.log(saverusera)
+
+    </script>
+</body>
+
+</html>
